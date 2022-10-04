@@ -1,0 +1,59 @@
+{% extends 'main/layout.html' %}
+
+{%block title%} Авторизация {%endblock%}
+
+{%block body%}
+    <div class="background"></div>
+    <div class="auth-block">
+        <a href="{% url 'home' %}" class="back">
+            <span class="backContent"></span>
+        </a>
+        <div class="header-logo">
+            <a href="{% url 'home' %}" class="home-page"></a>
+        </div>
+        <span class="text-auth">Войдите с Яндекс ID</span>
+        <div class="button-auth">
+            <div class="authTypeEmail">
+                <button class="buttonAuth1" type="button">Почта</button>
+            </div>
+            <div class="authTypePhone">
+                <button class="buttonAuth2" type="button">Телефон</button>
+            </div>
+        </div>
+        <div class="authPhone">
+            <div class="placeholder">+7 (999) 000-00-00</div>
+            <input class="inputAuthPhone" value="+7" type="tel">
+        </div>
+        <div class="signIn">
+            <button class="signInButton">Войти</button>
+        </div>
+        <div class="registration">
+            <button class="registrationButton">Создать ID</button>
+        </div>
+        <div class="footerAuth">
+            <h2 class="footerAuthText">Войти с помощью</h2>
+            <div class="authWith">
+                <button type="button">
+                    <span class="vk"></span>
+                </button>
+                 <button type="button">
+                    <span class="facebook"></span>
+                </button>
+                 <button type="button">
+                     <span class="google"></span>
+                </button>
+                 <div class="qrAuth" type="button">
+                     <span class="qrIcon"></span>
+                     <span class="qrName">QR-код</span>
+                </div>
+                 <button type="button">
+                    <span class="more"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="promo">
+        <span>Семейная оплата в Яндекс ID</span>
+        <a href="#">Узнать больше</a>
+    </div>
+{% endblock%}
